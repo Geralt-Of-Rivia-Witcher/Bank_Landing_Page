@@ -9,7 +9,7 @@ function convert(from, to) {
             .then((response) => response.json())
             .then((data) => resolve({ message: "success", data: data }))
             .catch((err) =>
-                reject({ message: "Some erroe occured", error: err })
+                reject({ message: "Some error occured", error: err })
             );
     });
 }
