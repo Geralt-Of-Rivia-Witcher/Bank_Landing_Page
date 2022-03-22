@@ -9,6 +9,8 @@ import axios from "axios";
 import "./ConversionBlock.styles.css";
 
 function ConversionBlock() {
+    const backendUrl =
+        process.env.REACT_APP_BACKEND_URL || "http://localhost:5000";
     const [amount, setAmount] = useState("");
     const [from, setFrom] = useState("default");
     const [to, setTo] = useState("default");
@@ -16,7 +18,7 @@ function ConversionBlock() {
 
     function convert() {
         axios
-            .get(`http://localhost:5000/convert?from=${from}&to=${to}`)
+            .get(`${backendUrl}/convert?from=${from}&to=${to}`)
             .then((response) => {
                 var curr = "";
                 for (var key in response.data.data.results) {
