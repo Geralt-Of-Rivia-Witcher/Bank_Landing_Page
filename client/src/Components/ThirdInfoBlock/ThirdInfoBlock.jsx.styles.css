@@ -1,0 +1,14 @@
+@media (max-width: 770px) {
+    .services-grid {
+        width: 85% !important;
+    }
+    .services-container {
+        height: auto !important;
+    }
+    .service-block {
+        margin-bottom: 30px;
+    }
+    .last-service-block {
+        margin-bottom: 80px;
+    }
+}

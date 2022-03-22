@@ -1,0 +1,5 @@
+@media (max-width: 770px) {
+    .sub-heading {
+        width: 80% !important;
+    }
+}

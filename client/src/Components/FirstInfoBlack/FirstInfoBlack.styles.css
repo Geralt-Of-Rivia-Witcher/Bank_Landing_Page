@@ -1,0 +1,14 @@
+@media (max-width: 770px) {
+    .page-image {
+        display: none;
+    }
+    .page-heading {
+        font-size: 35px !important;
+    }
+    .main-content-container {
+        width: 80% !important;
+    }
+    .first-block-container {
+        margin-top: 10vh !important;
+    }
+}

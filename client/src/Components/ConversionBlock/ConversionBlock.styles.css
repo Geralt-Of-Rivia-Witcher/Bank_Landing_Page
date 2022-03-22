@@ -1,0 +1,9 @@
+@media (max-width: 770px) {
+    .converted-amount-text-field {
+        width: 80% !important;
+        margin-top: 30px !important;
+    }
+    .convert-button {
+        margin-top: 10% !important;
+    }
+}
