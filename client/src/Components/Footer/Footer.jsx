@@ -89,7 +89,15 @@ function Footer() {
             <h3 style={{ fontWeight: "normal", marginBottom: "50px" }}>
                 © For: Salt.pe.
                 <br />
-                Coded by Siddhant Kumar Singh
+                Coded by{" "}
+                <a
+                    href="https://www.siddhantkumarsingh.me/"
+                    style={{ color: "white" }}
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    Siddhant Kumar Singh
+                </a>
             </h3>
         </div>
     );
