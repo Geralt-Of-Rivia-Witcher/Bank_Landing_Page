@@ -12,3 +12,17 @@
         margin-bottom: 80px;
     }
 }
+
+.service-block {
+    transition: transform 0.5s !important;
+}
+.service-block:hover {
+    transform: scale(1.04) !important;
+}
+
+.last-service-block {
+    transition: transform 0.5s !important;
+}
+.last-service-block:hover {
+    transform: scale(1.04) !important;
+}
