@@ -22,6 +22,7 @@ function Footer() {
             >
                 About
             </h5>
+            {window.innerWidth < 580 ? <br /> : <></>}
             <h5
                 style={{
                     display: "inline-block",
@@ -32,6 +33,7 @@ function Footer() {
             >
                 Pricing
             </h5>
+            {window.innerWidth < 580 ? <br /> : <></>}
             <h5
                 style={{
                     display: "inline-block",
@@ -42,6 +44,7 @@ function Footer() {
             >
                 Terms of Use
             </h5>
+            {window.innerWidth < 580 ? <br /> : <></>}
             <h5
                 style={{
                     display: "inline-block",
@@ -52,6 +55,7 @@ function Footer() {
             >
                 Privacy Policy
             </h5>
+            {window.innerWidth < 580 ? <br /> : <></>}
             <h5
                 style={{
                     display: "inline-block",
@@ -62,6 +66,7 @@ function Footer() {
             >
                 Careers
             </h5>
+            {window.innerWidth < 580 ? <br /> : <></>}
             <h5
                 style={{
                     display: "inline-block",
@@ -72,6 +77,7 @@ function Footer() {
             >
                 Blog
             </h5>
+            {window.innerWidth < 580 ? <br /> : <></>}
             <h5
                 style={{
                     display: "inline-block",
@@ -89,7 +95,8 @@ function Footer() {
             <h3 style={{ fontWeight: "normal", marginBottom: "50px" }}>
                 © For: Salt.pe.
                 <br />
-                Coded by{" "}
+                Coded by:&nbsp;
+                {window.innerWidth < 380 ? <br /> : <></>}
                 <a
                     href="https://www.siddhantkumarsingh.me/"
                     style={{ color: "white" }}
