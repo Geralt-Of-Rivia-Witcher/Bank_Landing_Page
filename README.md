@@ -40,7 +40,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This is a Landing Page for a bank with a currency converster fetaure integrated in it. I created it in 36 hours as part of an intern hiring challenge.
+This is a Landing Page for a bank with a currency converter fetaure integrated in it. I created it in 36 hours as part of an intern hiring challenge.
 <br />
 
 ### Built With

@@ -69,7 +69,7 @@ To get a local copy up and running follow these simple example steps.
    ```sh
    npm install
    ```
-4. Ceate a `.env` file and enter your API in it.
+4. Ceate a `.env` file and enter your API KEY in it.
    ```JS
    API_KEY = 'ENTER YOUR API KEY HERE'
    ```
