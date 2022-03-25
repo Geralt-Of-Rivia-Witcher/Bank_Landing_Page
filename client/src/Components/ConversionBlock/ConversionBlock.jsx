@@ -9,6 +9,20 @@ import axios from "axios";
 import "./ConversionBlock.styles.css";
 
 function ConversionBlock() {
+    function rendeDropDown(currency) {
+        return <MenuItem value={currency}>{currency}</MenuItem>;
+    }
+
+    const currencyArray = [
+        "AUD",
+        "CNY",
+        "EUR",
+        "INR",
+        "JPY",
+        "NZD",
+        "RSD",
+        "USD",
+    ];
     const backendUrl =
         process.env.REACT_APP_BACKEND_URL || "http://localhost:5000";
     const [amount, setAmount] = useState("");
@@ -84,14 +98,9 @@ function ConversionBlock() {
                         <MenuItem value="default">
                             <em>Select Source Currency</em>
                         </MenuItem>
-                        <MenuItem value="AUD">AUD</MenuItem>
-                        <MenuItem value="CNY">CNY</MenuItem>
-                        <MenuItem value="EUR">EUR</MenuItem>
-                        <MenuItem value="INR">INR</MenuItem>
-                        <MenuItem value="JPY">JPY</MenuItem>
-                        <MenuItem value="NZD">NZD</MenuItem>
-                        <MenuItem value="RSD">RSD</MenuItem>
-                        <MenuItem value="USD">USD</MenuItem>
+                        {currencyArray.map((eachCurrency) => {
+                            return rendeDropDown(eachCurrency);
+                        })}
                     </Select>
                 </Grid>
 
@@ -109,14 +118,9 @@ function ConversionBlock() {
                             <MenuItem value="default">
                                 <em>Select Target Currency</em>
                             </MenuItem>
-                            <MenuItem value="AUD">AUD</MenuItem>
-                            <MenuItem value="CNY">CNY</MenuItem>
-                            <MenuItem value="EUR">EUR</MenuItem>
-                            <MenuItem value="INR">INR</MenuItem>
-                            <MenuItem value="JPY">JPY</MenuItem>
-                            <MenuItem value="NZD">NZD</MenuItem>
-                            <MenuItem value="RSD">RSD</MenuItem>
-                            <MenuItem value="USD">USD</MenuItem>
+                            {currencyArray.map((eachCurrency) => {
+                                return rendeDropDown(eachCurrency);
+                            })}
                         </Select>
                     </div>
                 </Grid>
